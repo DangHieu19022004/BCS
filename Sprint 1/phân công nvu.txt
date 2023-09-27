@@ -1,0 +1,10 @@
+Phân công
+(làm chức năng 1-5)
+
+Trí duy: 1.1	1.2		
+Dũng	1.4	 
+Chung:	3. Thiết kế dữ liệu
+Đỗ Anh: Thiết kế giao diện. Hạn tối đa 1 ngày/1 chức năng bắt đầu tính từ 29/7
+Nguyên: 1.5	
+Trung: 	1.6 vẽ mô phỏng giao diện 
+Minh Hiếu: 1.3

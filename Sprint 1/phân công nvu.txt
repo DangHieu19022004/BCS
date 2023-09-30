@@ -1,3 +1,5 @@
+***Lưu ý: ý thứ 10 chức năng sửa thành đánh giá sao(1-5sao) giành cho sinh viên đã và đang ở tại đó
+
 Phân công
 (làm chức năng 1-5)
 

@@ -3,7 +3,7 @@
 Phân công
 (làm chức năng 1-5)
 
-Trí duy:1.2			détlai: hết thứ 2 tuần sau
+Trí duy:1.2			détlai: hết thứ 2 tuần sau		hết thứ 5 - thiết kế kiến trúc.
 Dũng	1.4	 		détlai: hết thứ 2 tuần sau
 Chung:	3. Thiết kế dữ liệu	détlai: hết thứ 3 tuần sau(3/10)
 Đỗ Anh: Thiết kế giao diện. Hạn tối đa 1 ngày/1 chức năng bắt đầu tính từ 30/9

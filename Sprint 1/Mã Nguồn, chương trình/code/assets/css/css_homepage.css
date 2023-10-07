@@ -16,7 +16,7 @@
     display: flex;
 }
 
-#header .list .propertises img{
+#header .list > .propertises > img{
     max-height: 68px;
     max-width: 200px;
     object-fit: cover;
@@ -42,6 +42,11 @@
     color: #fff;
     font-size: 15px;
 }
+
+#header .list .propertises_user{
+    margin-left: 150px;
+}
+
 
 #line1{
     border-top: 0.3px solid #fff;
@@ -499,3 +504,4 @@
 }
 
 /* for js */
+

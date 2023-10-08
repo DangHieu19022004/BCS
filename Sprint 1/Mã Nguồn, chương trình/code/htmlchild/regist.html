@@ -87,6 +87,9 @@
             <button id="registbutton" class="regist-button">
                 <b>Đăng Ký</b>
             </button>
+            <div id="registsuccessnotic">
+
+            </div>
         </div>
 
         <div id="verify">
@@ -140,6 +143,7 @@
     var code_Phongnumber=document.getElementById('code_Phongnumber');
     var authenticate_P=document.getElementById('authenticate_P');
     var Code_Ph=document.getElementById('Code_Ph');
+    var registsuccessnotic=document.getElementById('registsuccessnotic');
     var authenticate_Psuccess=document.getElementById('authenticate_Psuccess');
     registbutton.onclick=function() {
         if(pass.value !== repass.value){
@@ -179,9 +183,14 @@
                             }else{
                                 authenticate_Psuccess.style.display='block';
                                 setTimeout(function() {
-                                    window.location.href='./homepage.html';
+                                    code_Phongnumber.style.display='none';
+                                    content.style.display='block';
+                                    registsuccessnotic.style.display='block';
                                 },2000);
                             }
+                                setTimeout(function() {
+                                    window.location.href='./homepage.html';
+                                },4000);
                         })
 
                     }

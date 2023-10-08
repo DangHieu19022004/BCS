@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="shortcut icon" href="/assets/logoweb/android-chrome-512x512.png" type="image/x-icon">
+    <link rel="stylesheet" href="/assets/css/css_login.css">
+    <link rel="stylesheet" href="/assets/font/fontawesome-free-6.4.2-web/fontawesome-free-6.4.2-web/css/all.css">
+</head>
+<body>
+<div id="main_login">
+   <div id="header">
+        <ul class="list">
+            <li class="propertises">
+                <img src="/assets/img/logo.png" alt="logo" class="logo">
+            </li>
+
+            <li>
+                <a href="/BasicCollegeStudents.html" class="trangchu">Trang chủ</a>
+            </li>
+
+            <li class="propertises">
+                <a href="">Mục đã lưu</a>
+            </li>
+
+            <li class="propertises">
+                <a href="">Người cho thuê</a>
+            </li>
+
+            <li class="propertises">
+                <a href="">Thuê trọ</a>
+            </li>
+
+            <li class="propertises">
+                <a href="">Tìm người ghép cùng</a>
+            </li>
+
+            <li class="propertises">
+                <a href="">Gửi liên hệ</a>
+            </li>
+
+            <li class="propertises">
+                <a href="">Đăng bài</a>
+            </li>
+
+            <li class="propertises">
+                <a href="./regist.html">Đăng ký</a>
+            </li>
+
+            <li class="propertises">
+                <a href="./login.html">Đăng nhập</a>
+            </li>
+
+        </ul>
+
+        <hr id="line1">
+        <hr id="line2">
+
+    </div>
+
+    <div id="slider">
+        <div id="content">
+            <div class="inforusername">
+                <b class="username">Tên Đăng Nhập</b>
+                <input id="signin_text" type="text" class="textname" placeholder="Mời nhập thông tin">
+            </div>
+            <div class="inforpassword">
+                <b class="password">Mật khẩu</b>
+                <input id="pass_text" type="password" name="password" class="textpass" placeholder="Mời nhập thông tin">
+            </div>
+            <button id="signbutton" class="signin-button">
+                <b>Đăng Nhập</b>
+            </button>
+            <div class="remindpass">
+                <div id="tick" class="tick">
+                    <i id="ticki" class="fa-solid fa-check"></i>
+                </div>
+                <p>Ghi nhớ mật khẩu</p>
+                <a id="fogot" href="" class="forgotpass">Quên mật khẩu</a>
+            </div>
+        </div>
+        <div id="loginsuccess">
+
+        </div>
+    </div>
+</div>
+
+<!-- -----------js------------ -->
+<script>
+    var signbutton=document.getElementById('signbutton');
+    var loginsuccess=document.getElementById('loginsuccess');
+    var signin_text=document.getElementById('signin_text');
+    var pass_text=document.getElementById('pass_text');
+    var ticki=document.getElementById('ticki');
+    var tick=document.getElementById('tick');
+    var fogot=document.getElementById('fogot');
+    fogot.onclick = function() {
+        alert('TK: meomeouser\nMK: meomeopass');
+    }
+    tick.onclick = function () {
+        if (ticki.style.display === 'block') {
+            ticki.style.display = 'none';
+        } else {
+            ticki.style.display = 'block';
+        }
+    }
+    signbutton.onclick=function(){
+        if(signin_text.value==='meomeouser' && pass_text.value==='meomeopass'){
+            loginsuccess.style.display='block';
+            setTimeout(function() {
+                window.location.href='./homepage.html';
+            },2000)
+        }
+        else{
+            alert('Sai thông tin đăng nhập');
+        }
+    }
+</script>
+
+</body>
+</html>

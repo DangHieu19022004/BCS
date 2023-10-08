@@ -26,10 +26,15 @@
     display: inline-block;
 }
 
+#header .list li a:hover{
+    transition: 0.5s ease;
+    background-color: #23A6F0;
+}
+
 #header .list li a{
     font-family:Arial, Helvetica, sans-serif;
     padding-left: 25px;
-    padding-right: 10px;
+    padding-right: 25px;
     line-height: 68px;
     display: inline-block;
     text-align: center;
@@ -491,4 +496,8 @@
 #End a{
     text-decoration: none;
     color: #0A142F;
+}
+
+#fb:hover{
+    cursor: pointer;
 }

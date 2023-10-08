@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Basic College Students</title>
+    <link rel="shortcut icon" href="./assets/logoweb/android-chrome-192x192.png" type="image/x-icon">
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/font/themify-icons/themify-icons.css">
     <link rel="stylesheet" href="/assets/font/fontawesome-free-6.4.2-web/fontawesome-free-6.4.2-web/css/all.css">
@@ -45,11 +46,11 @@
             </li>
 
             <li class="propertises">
-                <a href="./regist.html">Đăng ký</a>
+                <a href="/htmlchild/regist.html">Đăng ký</a>
             </li>
 
             <li class="propertises">
-                <a href="./login.html">Đăng nhập</a>
+                <a id="buttonsign" href="/htmlchild/login.html">Đăng nhập</a>
             </li>
 
         </ul>
@@ -277,7 +278,7 @@
                 <p>0326057878</p>
                 <div class="social">
                     <p>Social Media</p>
-                    <i class="fa-brands fa-square-facebook"></i>
+                    <i id="fb" class="fa-brands fa-square-facebook"></i>
                     <i class="fa-brands fa-twitter"></i>
                     <b>in</b>
                     <i class="fa-brands fa-youtube"></i>
@@ -310,5 +311,12 @@
         </div>
     </div>
 </div>
+
+<script>
+    var fb=document.getElementById('fb');
+    fb.onclick=(function() {
+        window.location.href='https://www.facebook.com/profile.php?id=100079643042931';
+    })
+</script>
 </body>
 </html>

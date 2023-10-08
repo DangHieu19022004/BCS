@@ -188,8 +188,6 @@
 /* important */
 
 
-
-
 #verify,
 #content{
     /* display: none; */
@@ -205,6 +203,7 @@
     transform: translate(-50%,-65%);
 }
 
+#code_Phongnumber img,
 #code_email img{
     position: absolute;
     width: 500px;
@@ -249,3 +248,56 @@
     left: 50%;
     transform: translateX(-50%);
 }
+
+
+/* ----------- */
+#code_Phongnumber{
+    display: none;
+    position: relative;
+    width: 680px;
+    height: 330px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-65%);
+}
+
+#code_Phongnumber .code_p > b{
+    background-color: #00EDFC;
+    display: block;
+    float: left;
+    margin-top: 120px;
+    padding: 15px 70px;
+    border-radius: 12px;
+}
+
+#code_Phongnumber .code_p input{
+    margin-top: 120px;
+    width: 300px;
+    padding: 16px;
+    transform: translateX(50px);
+    border-radius: 12px;
+    border: 0px solid #878787;
+}
+
+#authenticate_P{
+    margin-top: 45px;
+    background-color: #00EDFC;
+    padding: 15px 60px;
+    border-radius: 12px;
+    border: 0px solid #878787;
+    font-size: 20px;
+}
+
+#authenticate_P:hover{
+    cursor: pointer;
+}
+
+#authenticate_Psuccess{
+    display: none;
+    position: relative;
+    background-image: url(/assets/img/authenticatesuccess.png);
+    width: 510px;
+    height: 200px;
+    transform: translate(80px,-270px);
+}
+

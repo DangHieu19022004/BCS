@@ -502,3 +502,7 @@
     text-decoration: none;
     color: #0A142F;
 }
+
+#fb:hover{
+    cursor: pointer;
+}

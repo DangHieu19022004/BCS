@@ -46,7 +46,15 @@
                 </li>
 
                 <li class="propertises_user">
-                    <img src="/assets/icon/user.png" alt="">
+                    <img id="userO" src="/assets/icon/user.png" alt="">
+                    <ul id="infoUser">
+                        <li>
+                            <a href="">Sửa thông tin</a>
+                        </li>
+                        <li>
+                            <a href="/BasicCollegeStudents.html">Đăng xuất</a>
+                        </li>
+                    </ul>
                 </li>
 
             </ul>
@@ -310,9 +318,18 @@
 
 <script>
     var fb=document.getElementById('fb');
+    var infoUser=document.getElementById('infoUser');
+    var userO=document.getElementById('userO');
     fb.onclick=(function() {
         window.location.href='https://www.facebook.com/profile.php?id=100079643042931';
     })
+    userO.onclick= function() {
+        if(infoUser.style.display==='none'){
+            infoUser.style.display='block';
+        }else{
+            infoUser.style.display='none';
+        }
+    }
 </script>
 
 </body>

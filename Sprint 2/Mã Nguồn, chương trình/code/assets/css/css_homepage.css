@@ -47,6 +47,29 @@
     margin-left: 150px;
 }
 
+#header .list .propertises_user:hover{
+    cursor: pointer;
+}
+
+#header .list .propertises_user ul{
+    position: absolute;
+    display: none;
+}
+
+#header .list .propertises_user li{
+    background-color: #23A6F0;
+    padding: 5px 2px;
+    position: relative;
+    display: list-item;
+    list-style-type: none;
+    text-align: center;
+}
+
+#header .list .propertises_user li:hover a{
+    background-color: #94d3f7;
+    display: block;
+}
+
 
 #line1{
     border-top: 0.3px solid #fff;
@@ -501,4 +524,8 @@
 #End a{
     text-decoration: none;
     color: #0A142F;
+}
+
+#fb:hover{
+    cursor: pointer;
 }

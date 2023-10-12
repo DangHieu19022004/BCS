@@ -61,6 +61,7 @@
 }
 
 #content{
+    color: #fff;
     position: relative;
     width: 680px;
     height: 330px;
@@ -72,11 +73,10 @@
 
 
 #content .inforusername .username{
-    background-color: #00EDFC;
+    background-color: #000;
     display: block;
     float: left;
     padding: 15px 60px;
-    border-radius: 12px;
 }
 
 #content .inforusername .textname{
@@ -95,11 +95,10 @@
 }
 
 #content .inforpassword .password{
-    background-color: #00EDFC;
+    background-color: #000;
     display: block;
     float: left;
     padding: 15px 81px;
-    border-radius: 12px;
 }
 
 #code_email .code input,
@@ -116,32 +115,29 @@
 }
 
 #content .retypepass b{
-    background-color: #00EDFC;
+    background-color: #000;
     display: block;
     float: left;
     padding: 15px 50.5px;
-    border-radius: 12px;
 }
 
 #content .email b{
-    background-color: #00EDFC;
+    background-color: #000;
     display: block;
     float: left;
     padding: 15px 93px;
-    border-radius: 12px;
 }
 
 #content .phonenumber b{
-    background-color: #00EDFC;
+    background-color: #000000;
     display: block;
     float: left;
     padding: 15px 69.5px;
-    border-radius: 12px;
 }
 
 #content .regist-button{
     margin-top: 45px;
-    background-color: #00EDFC;
+    background-color: #0065FC;
     padding: 15px 60px;
     border-radius: 12px;
     border: 0px solid #878787;
@@ -149,6 +145,7 @@
 
 #content .regist-button:hover{
     cursor: pointer;
+    background-color: #78aaf5;
 }
 
 #verify{
@@ -188,14 +185,13 @@
 /* important */
 
 
-
-
 #verify,
 #content{
     /* display: none; */
 }
 
 #code_email{
+    color: #fff;
     display: none;
     position: relative;
     width: 680px;
@@ -205,6 +201,7 @@
     transform: translate(-50%,-65%);
 }
 
+#code_Phongnumber img,
 #code_email img{
     position: absolute;
     width: 500px;
@@ -220,16 +217,15 @@
 }
 
 #code_email .code > b{
-    background-color: #00EDFC;
+    background-color: #000;
     display: block;
     float: left;
     padding: 15px 70px;
-    border-radius: 12px;
 }
 
 #code_email .authenticate{
     margin-top: 45px;
-    background-color: #00EDFC;
+    background-color: #0065FC;
     padding: 15px 60px;
     border-radius: 12px;
     border: 0px solid #878787;
@@ -238,14 +234,78 @@
 
 #code_email .authenticate:hover{
     cursor: pointer;
+    background-color: #78aaf5;
 }
 
 #code_email .authenticatesuccess{
     display: none;
     position: relative;
-    background-image: url(/assets/img/authenticatesuccess.png);
+    background-image: url(/assets/img/xacthucsuccess.png);
     width: 510px;
     height: 200px;
     left: 50%;
     transform: translateX(-50%);
+}
+
+
+/* ----------- */
+#code_Phongnumber{
+    color: #fff;
+    display: none;
+    position: relative;
+    width: 680px;
+    height: 330px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-65%);
+}
+
+#code_Phongnumber .code_p > b{
+    background-color: #000;
+    display: block;
+    float: left;
+    margin-top: 120px;
+    padding: 15px 50px;
+    margin-left: 50px;
+}
+
+#code_Phongnumber .code_p input{
+    margin-top: 120px;
+    width: 300px;
+    padding: 16px;
+    transform: translateX(50px);
+    border-radius: 12px;
+    border: 0px solid #878787;
+}
+
+#authenticate_P{
+    margin-top: 45px;
+    background-color: #0065FC;
+    padding: 15px 60px;
+    border-radius: 12px;
+    border: 0px solid #878787;
+    font-size: 20px;
+}
+
+#authenticate_P:hover{
+    cursor: pointer;
+    background-color: #78aaf5;
+}
+
+#authenticate_Psuccess{
+    display: none;
+    position: relative;
+    background-image: url(/assets/img/xacthucsuccess.png);
+    width: 510px;
+    height: 200px;
+    transform: translate(80px,-270px);
+}
+
+#registsuccessnotic{
+    display: none;
+    position: relative;
+    background-image: url(/assets/img/dangkysuccess.png);
+    width: 510px;
+    height: 200px;
+    transform: translate(80px,-380px);
 }

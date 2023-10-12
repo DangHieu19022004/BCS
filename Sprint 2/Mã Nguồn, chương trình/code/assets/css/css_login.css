@@ -61,6 +61,7 @@
 }
 
 #content{
+    color: #fff;
     position: relative;
     width: 680px;
     height: 330px;
@@ -70,11 +71,10 @@
 }
 
 #content .inforusername .username{
-    background-color: #00EDFC;
+    background-color: #000;
     display: block;
     float: left;
     padding: 15px 60px;
-    border-radius: 12px;
 }
 
 #content .inforusername .textname{
@@ -90,11 +90,10 @@
 }
 
 #content .inforpassword .password{
-    background-color: #00EDFC;
+    background-color: #000;
     display: block;
     float: left;
     padding: 15px 80px;
-    border-radius: 12px;
 }
 
 #content .inforpassword .textpass{
@@ -107,7 +106,7 @@
 
 #content .signin-button{
     margin-top: 35px;
-    background-color: #00EDFC;
+    background-color: #0065FC;
     padding: 15px 40px;
     border-radius: 12px;
     border: 0px solid #878787;
@@ -115,6 +114,7 @@
 
 #content .signin-button:hover{
     cursor: pointer;
+    background-color: #78aaf5;
 }
 
 #content .remindpass .tick{
@@ -162,7 +162,7 @@
 #loginsuccess{
     display: none;
     position: relative;
-    background-image: url(/assets/img/loginsuccess.png);
+    background-image: url(/assets/img/dangnhamsuccess.png);
     width: 510px;
     height: 200px;
     left: 450px;

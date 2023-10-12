@@ -1,0 +1,137 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; /*bao gồm cả pad, cont, margin, border */
+
+}
+
+#header {
+    height: 82px;
+    width: 100%;
+    padding-left: 100px;
+    position: relative;
+    background-color: #0b72ad;
+}
+
+
+#header .list{
+    display: flex;
+}
+
+#header .list > .propertises > img{
+    max-height: 68px;
+    max-width: 200px;
+    object-fit: cover;
+}
+
+#header .list li{
+    display: inline-block;
+}
+
+#header .list li a:hover{
+    transition: 0.5s ease;
+    background-color: #23A6F0;
+}
+
+#header .list li a{
+    font-family:Arial, Helvetica, sans-serif;
+    padding-left: 25px;
+    padding-right: 25px;
+    line-height: 68px;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    font-size: 15px;
+}
+
+#header .list .propertises_user{
+    margin-left: 110px;
+}
+
+#header .list .propertises_user:hover{
+    cursor: pointer;
+}
+
+#header .list .propertises_user img{
+    margin-top: 12px;
+    width: 60px;
+    height: 74%;
+}
+
+#header .list .propertises_user ul{
+    position: absolute;
+    display: none;
+}
+
+#header .list .propertises_user li{
+    background-color: #23A6F0;
+    padding: 5px 2px;
+    position: relative;
+    display: list-item;
+    list-style-type: none;
+    text-align: center;
+}
+
+#header .list .propertises_user li:hover a{
+    background-color: #94d3f7;
+    display: block;
+}
+
+
+#line1{
+    border-top: 0.3px solid #fff;
+    width: 82px;
+    margin-left: 575px;
+}
+
+/* --------------- */
+#container{
+    width: 100%;
+    height: 1500px;
+    background-color: #F5F5F5;
+    position: relative;
+    margin-top: 10px;
+}
+
+#content{
+    position: absolute;
+    background-color: #23A6F0;
+    margin-top: 30px;
+    width: 1200px;
+    height: 1200px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#content .filterpapa{
+    width: 100%;
+    height: 100px;
+    background-color: #69F3FC;
+    display: flex;
+    position: relative;
+}
+
+#content .filterpapa ul{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+#content .filterpapa p{
+    font-size: 20px;
+    display: inline;
+    padding-right: 15px;
+}
+
+#content .filterpapa li{
+    display: inline-block;
+    background-color: #fff;
+    padding: 10px 15px;
+    margin-right: 40px;
+}
+
+#content .filterpapa .ti-filter{
+    font-size: 20px;
+}

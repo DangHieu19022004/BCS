@@ -1,0 +1,241 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; /*bao gồm cả pad, cont, margin, border */
+
+}
+
+#header {
+    height: 82px;
+    width: 100%;
+    padding-left: 100px;
+    position: relative;
+    background-color: #0b72ad;
+}
+
+
+#header .list{
+    display: flex;
+}
+
+#header .list > .propertises > img{
+    max-height: 68px;
+    max-width: 200px;
+    object-fit: cover;
+}
+
+#header .list li{
+    display: inline-block;
+}
+
+#header .list li a:hover{
+    transition: 0.5s ease;
+    background-color: #23A6F0;
+}
+
+#header .list li a{
+    font-family:Arial, Helvetica, sans-serif;
+    padding-left: 25px;
+    padding-right: 25px;
+    line-height: 68px;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    font-size: 15px;
+}
+
+#header .list .propertises_user{
+    margin-left: 110px;
+}
+
+#header .list .propertises_user:hover{
+    cursor: pointer;
+}
+
+#header .list .propertises_user img{
+    margin-top: 12px;
+    width: 60px;
+    height: 74%;
+}
+
+#header .list .propertises_user ul{
+    position: absolute;
+    display: none;
+}
+
+#header .list .propertises_user li{
+    background-color: #23A6F0;
+    padding: 5px 2px;
+    position: relative;
+    display: list-item;
+    list-style-type: none;
+    text-align: center;
+}
+
+#header .list .propertises_user li:hover a{
+    background-color: #94d3f7;
+    display: block;
+}
+
+
+#line1{
+    border-top: 0.3px solid #fff;
+    width: 82px;
+    margin-left: 575px;
+}
+
+/* --------------- */
+#container{
+    width: 100%;
+    height: 1500px;
+    background-color: #F5F5F5;
+    position: relative;
+    margin-top: 10px;
+}
+
+#content{
+    position: absolute;
+    /* background-color: #23A6F0; */
+    margin-top: 30px;
+    width: 1200px;
+    height: 1200px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#content .filterpapa{
+    display: inline-flex;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    background-color: #69F3FC;
+    display: flex;
+    position: relative;
+}
+
+#content .filterpapa ul{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+#content .filterpapa p{
+    font-size: 20px;
+    display: inline;
+    padding-right: 15px;
+}
+
+#content .filterpapa li{
+    display: inline-block;
+    background-color: #fff;
+    padding: 10px 15px;
+    margin-right: 40px;
+}
+
+#content .filterpapa .ti-filter{
+    font-size: 20px;
+}
+
+.filterpapa-label_start{
+    min-width: 84px;
+    min-height: 45px;
+    margin: 33px 49px;
+    background-color: #fff;
+    border: none;
+    border-radius: 2px;
+}
+
+.filterpapa-label{
+    min-width: 146px;
+    min-height: 45px;
+    text-decoration: none;
+    border: none;
+    border-radius: 2px;
+    font-size: 15px;
+    padding: 0 12px;
+    outline: none;
+    cursor: pointer;
+    color: var(--text-color);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    line-height: 16px;
+    margin-right: 46px;
+}
+
+.filterpapa-label_icon{
+    margin-left: 14px;
+}
+
+.filterpapa-search_input{
+    min-width: 350px;
+    min-height: 45px;
+    border: none;
+    border-radius: 3px;
+    font-size: 14px;
+}
+
+/* Homeing */
+
+.homeimg_top,
+.homeimg_bot{
+    display: inline-flex;
+    list-style: none;
+}
+
+.homeimg_top li{
+    padding-top: 70px;
+    margin-left: 50px;
+    position: relative;
+    transform: translateX(30px);
+}
+
+.homeimg_bot li{
+    padding-top: 30px;
+    margin-left: 50px;
+    position: relative;
+    transform: translateX(30px);
+}
+
+/* Next Page */
+
+.next-page ul{
+    list-style: none;
+    display: inline-flex;
+    align-items: center;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    margin-top: 75px;
+    font-size: 20px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.next-page .start{
+    color: #BDBDBD;
+    background-color: #F3F3F3;
+    font-size: 20px;
+    padding: 15px 18px;
+}
+
+.next-page li{
+    border: 0.3px solid rgba(0, 0, 0, 0.3);
+    font-size: 20px;
+}
+
+.next-page .color{
+    background-color: #F4511E;
+    color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.next-page p{
+    padding: 15px 18px;
+}
+
+.next-page .continue{
+    color: #F4511E;
+}

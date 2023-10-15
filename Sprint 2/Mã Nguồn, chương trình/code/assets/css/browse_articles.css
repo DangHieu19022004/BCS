@@ -1,0 +1,200 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; /*bao gồm cả pad, cont, margin, border */
+
+}
+
+#header {
+    height: 82px;
+    width: 100%;
+    padding-left: 100px;
+    position: relative;
+    background-color: #0b72ad;
+}
+
+#header .list{
+    display: flex;
+}
+
+#header .list > .propertises > img{
+    max-height: 68px;
+    max-width: 200px;
+    object-fit: cover;
+}
+
+#header .list li{
+    display: inline-block;
+}
+
+#header .list li a:hover{
+    transition: 0.5s ease;
+    background-color: #23A6F0;
+}
+
+#header .list li a{
+    font-family:Arial, Helvetica, sans-serif;
+    padding-left: 25px;
+    padding-right: 25px;
+    line-height: 68px;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    font-size: 15px;
+}
+
+#header .list .propertises_user{
+    margin-left: 110px;
+}
+
+#header .list .propertises_user:hover{
+    cursor: pointer;
+}
+
+#header .list .propertises_user img{
+    margin-top: 12px;
+    width: 60px;
+    height: 74%;
+}
+
+#header .list .propertises_user ul{
+    position: absolute;
+    display: none;
+}
+
+#header .list .propertises_user li{
+    background-color: #23A6F0;
+    padding: 5px 2px;
+    position: relative;
+    display: list-item;
+    list-style-type: none;
+    text-align: center;
+}
+
+#header .list .propertises_user li:hover a{
+    background-color: #94d3f7;
+    display: block;
+}
+
+#header .list .propertises_user{
+    margin-left: 110px;
+}
+
+#header .list .propertises_user:hover{
+    cursor: pointer;
+}
+
+#header .list .propertises_user img{
+    margin-top: 12px;
+    width: 60px;
+    height: 74%;
+    margin-left: 800px;
+}
+
+#header .list .propertises_user ul{
+    position: absolute;
+    display: none;
+}
+
+#header .list .propertises_user li{
+    background-color: #23A6F0;
+    padding: 5px 2px;
+    position: relative;
+    display: list-item;
+    list-style-type: none;
+    text-align: center;
+}
+
+#header .list .propertises_user li:hover a{
+    background-color: #94d3f7;
+    display: block;
+}
+
+#line1{
+    border-top: 0.3px solid #fff;
+    width: 82px;
+    margin-left: 300px;
+}
+
+/* Content */
+
+.browse_articles{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+}
+
+table, th, td{
+    border: 1px solid black;
+    width: 1200px;
+    height: 100px;
+    vertical-align: middle
+}
+
+th,td{
+    font-size: 19px;
+    text-align: center;
+}
+
+table{
+    border-collapse:collapse;
+    align-items: center;
+}
+
+.browse_articles_table a{
+    text-decoration: none;
+    color: black;
+}
+
+/* Select and Delete */
+
+.browse_articles_select{
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.browse_articles_tick{
+    color: green;
+    font-size: 20px;
+}
+
+.browse_articles_delete{
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    margin-left: 35px;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.browse_articles_trash{
+    color: red;
+    font-size: 20px;
+}
+
+/* Next Page */
+
+.next-page{
+    display: inline-flex;
+    align-items: center;
+    justify-self: center;
+    margin-top: 2px;
+    font-size: 25px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    min-width: 80px;
+    min-height: 30px;
+    text-decoration: none;
+    border-radius: 2px;
+    padding: 0 12px;
+    outline: none;
+    cursor: pointer;
+    background-color: #fff;
+}

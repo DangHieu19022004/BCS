@@ -64,32 +64,101 @@
         <div id="container">
             <div id="content">
                 <div class="filterpapa">
-                    <button class="filterpapa-label_start">
+                    <button id="fil" class="filterpapa-label_start">
                         <i class="ti-filter"> Lọc</i>
                     </button>
 
-                    <button class="filterpapa-label">
-                        <span class="filterpapa-label_item">Địa chỉ</span>
+                    <button id="filterpapa-label_address" class="filterpapa-label">
+                        <span id="addchange" class="filterpapa-label_item">Địa chỉ</span>
                         <i class="filterpapa-label_icon ti-angle-down"></i>
+                        <ul id="ul_address">
+                            <li>
+                                <p>Thanh Xuân</p>
+                            </li>    
+                            <li>
+                                <p>Long Biên</p>
+                            </li>
+                            <li>
+                                <p>Thanh Trì</p>
+                            </li>
+                            <li>
+                                <p>Cầu Giấy</p>
+                            </li>
+                            <li>
+                                <p>Hai Bà Trưng</p>
+                            </li>
+                        </ul>
                     </button>
                         
-                    <button class="filterpapa-label">
-                        <span class="filterpapa-label_item">Diện tích</span>
+                    <button id="filterpapa-label_area" class="filterpapa-label">
+                        <span id="areachange" class="filterpapa-label_item">Diện tích</span>
                         <i class="filterpapa-label_icon ti-angle-down"></i>
+                        <ul id="ul_area">
+                            <li>
+                                <p>5-10m&sup2;</p>
+                            </li>
+                            <li>
+                                <p>10-15m&sup2;</p>
+                            </li>
+                            <li>
+                                <p>15-20m&sup2;</p>
+                            </li>
+                            <li>
+                                <p>20-25m&sup2;</p>
+                            </li>
+                            <li>
+                                <p>25-30m&sup2;</p>
+                            </li>
+                            <li>
+                                <p>30-35m&sup2;</p>
+                            </li>
+                            <li>
+                                <p>35-40m&sup2;</p>
+                            </li>
+                            <li>
+                                <p>40-45m&sup2;</p>
+                            </li>
+                            <li>
+                                <p>45-50m&sup2;</p>
+                            </li>
+                            <li>
+                                <p>50-55m&sup2;</p>
+                            </li>
+                        </ul>
                     </button>
                         
-                    <button class="filterpapa-label">
-                        <span class="filterpapa-label_item">Mức giá</span>
+                    <button id="filterpapa-label_cost" class="filterpapa-label">
+                        <span id="costchange" class="filterpapa-label_item">Mức giá</span>
                         <i class="filterpapa-label_icon ti-angle-down"></i>
+                        <ul id="ul_cost">
+                            <li>
+                                <p>1-2tr/tháng</p>
+                            </li>
+                            <li>
+                                <p>2-2,5tr/tháng</p>
+                            </li>
+                            <li>
+                                <p>2,5-3tr/tháng</p>
+                            </li>
+                            <li>
+                                <p>3-3,5tr/tháng</p>
+                            </li>
+                            <li>
+                                <p>4-4,5tr/tháng</p>
+                            </li>
+                            <li>
+                                <p>4,5-5tr/tháng</p>
+                            </li>
+                        </ul>
                     </button>
                     
-                    <input type="text" class="filterpapa-search_input" placeholder="Tìm nhanh:">
+                    <input id="find" type="text" class="filterpapa-search_input" placeholder="Tìm nhanh:">
 
                 </div>
                 <div class="homeimg">
-                    <ul class="homeimg_top">
+                    <ul id="homeimg_top" class="homeimg_top">
                         <li>
-                            <img src="/assets/img/PhungHung.png" alt="">
+                            <img id="PhungHung" src="/assets/img/PhungHung.png" alt="">
                         </li>
                         <li>
                             <img src="/assets/img/GiaThuy.png" alt="">
@@ -98,7 +167,7 @@
                             <img src="/assets/img/KimGiang.png" alt="">
                         </li>
                     </ul>
-                    <ul class="homeimg_bot">
+                    <ul id="homeimg_bot" class="homeimg_bot">
                         <li>
                             <img src="/assets/img/NguyenKhang.png" alt="">
                         </li>
@@ -112,7 +181,7 @@
                 </div>    
                 <div class="next-page">
                     <ul>
-                        <li class="start">
+                        <li id="start" class="start">
                             <b>Bđầu</b>
                         </li>
                         <li class="color">
@@ -124,7 +193,7 @@
                         <li>
                             <p>3</p>
                         </li>
-                        <li class="continue">
+                        <li id="continue" class="continue">
                             <p>Tiếp</p>
                         </li>
                     </ul>
@@ -132,12 +201,86 @@
                 </div>
             </div>
         </div>
-<<<<<<< HEAD
-=======
-
->>>>>>> 38f28cb0c2f3c95df698bdef13f71dcdcbf76e18
     <script>
         var homepage=document.getElementById('homepage');
+        var address=document.getElementById('filterpapa-label_address');
+        var ul_address=document.getElementById('ul_address');   
+        var area=document.getElementById('filterpapa-label_area');
+        var ul_area=document.getElementById('ul_area');
+        var cost=document.getElementById('filterpapa-label_cost');
+        var ul_cost=document.getElementById('ul_cost');
+        var container=document.getElementById('container');
+        var addchange=document.getElementById('addchange');
+        var areachange=document.getElementById('areachange');
+        var costchange=document.getElementById('costchange');
+        var liuladdress=document.querySelectorAll('#ul_address li');
+        var liul_area=document.querySelectorAll('#ul_area li');
+        var liul_cost=document.querySelectorAll('#ul_cost li');
+        address.onclick=function() {
+            if(ul_address.style.display==='none'){
+                ul_address.style.display='block';
+                ul_area.style.display='none';
+                ul_cost.style.display='none';
+            }
+            else{
+                ul_address.style.display='none'
+            }
+        }
+        area.onclick=function() {
+            if(ul_area.style.display==='none'){
+                ul_area.style.display='block';
+                ul_address.style.display='none';
+                ul_cost.style.display='none';
+            }else{
+                ul_area.style.display='none';
+            }
+        }
+        cost.onclick=function() {
+            if(ul_cost.style.display==='none'){
+                ul_cost.style.display='block';
+                ul_address.style.display='none';
+                ul_area.style.display='none';
+            }else{
+                ul_cost.style.display='none';
+            }
+        }
+        liuladdress.forEach(function(li) {
+            var pli=li.querySelector('p');
+            li.onclick=function() {
+                addchange.textContent=pli.textContent;
+            }
+        })
+        liul_area.forEach(function(li) {
+            var pli=li.querySelector('p');
+            li.onclick=function() {
+                areachange.textContent=pli.textContent;
+            }
+        })
+        liul_cost.forEach(function(li) {
+            var pli=li.querySelector('p');
+            li.onclick=function() {
+                costchange.textContent=pli.textContent;
+            }
+        })
+
+        var fil=document.getElementById('fil');
+        fil.onclick=function() {
+            var PhungHung=document.getElementById('PhungHung');
+            var homeimg_top=document.querySelectorAll('#homeimg_top li');
+            homeimg_top.forEach(function(li) {
+                var liimg=li.querySelector('img');
+                liimg.style.display='none';
+                if(addchange.textContent==='Thanh Trì' && costchange.textContent==='3-3,5tr/tháng' && areachange.textContent==='15-20m\u00B2')
+                PhungHung.style.display='block';
+            var homeimg_bot=document.querySelectorAll('#homeimg_bot li');
+            homeimg_bot.forEach(function(li) {
+                var liimg=li.querySelector('img');
+                liimg.style.display='none';
+            })
+            
+           })
+        }
+        
         homepage.onclick=function() {
             window.location.href='./homepage.html';
         };

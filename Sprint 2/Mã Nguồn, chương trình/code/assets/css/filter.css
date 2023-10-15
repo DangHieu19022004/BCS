@@ -110,8 +110,8 @@
     width: 100%;
     height: 100px;
     background-color: #69F3FC;
-    display: flex;
     position: relative;
+    border: 1px solid #000;
 }
 
 #content .filterpapa ul{
@@ -121,13 +121,13 @@
     transform: translate(-50%,-50%);
 }
 
-#content .filterpapa p{
+#content .filterpapa > p{
     font-size: 20px;
     display: inline;
     padding-right: 15px;
 }
 
-#content .filterpapa li{
+#content .filterpapa > li{
     display: inline-block;
     background-color: #fff;
     padding: 10px 15px;
@@ -169,6 +169,104 @@
 .filterpapa-label_icon{
     margin-left: 14px;
 }
+
+#filterpapa-label_cost,
+#filterpapa-label_area,
+#filterpapa-label_address{
+    position: relative;
+}
+
+#ul_address,
+#ul_area,
+#ul_cost{
+    display: none;
+}
+
+#filterpapa-label_address ul{
+    position: absolute;
+    z-index: 1;
+    text-decoration: none;
+    list-style: none;
+    float: left;
+    text-align: left;
+    margin-top: 125px;
+
+    min-width: 146px;
+    min-height: 45px;
+    text-decoration: none;
+    border: none;
+    font-size: 17px;
+    padding: 15px 12px;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    line-height: 20px;
+    margin-right: 46px;
+}
+
+#filterpapa-label_area ul{
+    position: absolute;
+    z-index: 1;
+    text-decoration: none;
+    list-style: none;
+    float: left;
+    text-align: center;
+    margin-top: 215px;
+    min-width: 146px;
+    min-height: 45px;
+    text-decoration: none;
+    border: none;
+    font-size: 17px;
+    padding: 15px 12px;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    line-height: 20px;
+    margin-right: 46px;
+}
+
+#filterpapa-label_cost ul{
+    position: absolute;
+    z-index: 1;
+    text-decoration: none;
+    list-style: none;
+    float: left;
+    text-align: center;
+    margin-top: 145px;
+    min-width: 146px;
+    min-height: 45px;
+    text-decoration: none;
+    border: none;
+    font-size: 17px;
+    padding: 15px 12px;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    line-height: 20px;
+    margin-right: 46px;
+}
+
+#fil{
+    cursor: pointer;
+}
+
+#filterpapa-label_cost p,
+#filterpapa-label_area p,
+#filterpapa-label_address p{
+    padding: 8px 0px;
+    font-size: 18px;
+}
+
+#filterpapa-label_cost li:hover,
+#filterpapa-label_area li:hover,
+#filterpapa-label_address li:hover{
+    color: #23A6F0;
+}
+
+
 
 .filterpapa-search_input{
     min-width: 350px;
@@ -212,6 +310,10 @@
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
+}
+
+.next-page:hover{
+    cursor: pointer;
 }
 
 .next-page .start{

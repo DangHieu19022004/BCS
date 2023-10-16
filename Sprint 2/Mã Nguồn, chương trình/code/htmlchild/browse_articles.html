@@ -53,23 +53,23 @@
                             <th>Xét duyệt</th>
                         </tr>
 
-                        <tr>
-                            <td>1</td>
+                        <tr class="row">
+                            <td class="number">1</td>
                             <td>Trần Đăng Hiếu</td>
                             <td>0326057878</td>
-                            <td>https://www.BasicCollegeStudents.com/Phunghung</td>
+                            <td id="link">https://www.BasicCollegeStudents.com/Phunghung</td>
                             <td>
                                 <button class="tick browse_articles_select">
                                     <i class="browse_articles_tick fa-solid fa-check"></i>
                                 </button>
-                                <button class="browse_articles_delete">
+                                <button class="bin browse_articles_delete">
                                     <i class="browse_articles_trash fa-regular fa-trash-can"></i>
                                 </button>
                             </td>
                         </tr>
                         
-                        <tr>
-                            <td>2</td>
+                        <tr class="row">
+                            <td class="number">2</td>
                             <td>Nguyễn Trí Duy</td>
                             <td>0325123457</td>
                             <td>https://www.BasicCollegeStudents.com/ThanhTri</td>
@@ -77,14 +77,14 @@
                                 <button class="tick browse_articles_select">
                                     <i class="browse_articles_tick fa-solid fa-check"></i>
                                 </button>
-                                <button class="browse_articles_delete">
+                                <button class="bin browse_articles_delete">
                                     <i class="browse_articles_trash fa-regular fa-trash-can"></i>
                                 </button>
                             </td>
                         </tr>
 
-                        <tr>
-                            <td>3</td>
+                        <tr class="row">
+                            <td class="number">3</td>
                             <td>Nguyễn Quang Dũng</td>
                             <td>0321234457</td>
                             <td>https://www.BasicCollegeStudents.com/TranDuyHung</td>
@@ -92,14 +92,14 @@
                                 <button class="tick browse_articles_select">
                                     <i class="browse_articles_tick fa-solid fa-check"></i>
                                 </button>
-                                <button class="browse_articles_delete">
+                                <button class="bin browse_articles_delete">
                                     <i class="browse_articles_trash fa-regular fa-trash-can"></i>
                                 </button>
                             </td>
                         </tr>
 
                         <tr>
-                            <td>4</td>
+                            <td class="number">4</td>
                             <td>Nguyễn Trí Duy</td>
                             <td>0325123457</td>
                             <td>https://www.BasicCollegeStudents.com/LongBien</td>
@@ -107,7 +107,7 @@
                                 <button class="tick browse_articles_select">
                                     <i class="browse_articles_tick fa-solid fa-check"></i>
                                 </button>
-                                <button class="browse_articles_delete">
+                                <button class="bin browse_articles_delete">
                                     <i class="browse_articles_trash fa-regular fa-trash-can"></i>
                                 </button>
                             </td>
@@ -125,29 +125,98 @@
 
             <button class="next-page">1/10</button>
         </div>
+
+        <div id="describe">
+            <div class="content">
+                <div class="icon">
+                    <div class="flexing">
+                        <img src="/assets/img/avar.png" alt="">
+                    <p>Họ Tên: Trần Đăng Hiếu <br>
+                        Số điện thoại: 0326057878 <br>
+                        Email: danghieu19022004@gmail.com</p>
+                    </div>
+                    <div class="text">
+                        <p>Địa chỉ: 69 Phùng Hưng, Xã Tân Triều, Huyện Thanh Trì <br>
+                            Giá: 3,5 Triệu/Tháng - 20m² <br>
+                            Mô tả: Nhà ở vị trí trung tâm nhiều tiện ích và tiện nghi <br>
+                            xung quanh, nhà mặt tiền 2 ô tô tránh nhau dễ dàng chuyển<br>
+                            đồ và đi lại. Đặc biệt nhà thông thoáng cả 2 mặt hướng <br>
+                            đông nam, có lối thoát hiểm trên tầng thượng Còn phòng <br>
+                            tầng 3 đẹp như hình, phòng đã đầy đủ đồ chỉ việc mang quần<br>
+                            áo vào là ở, bếp và sân phơi máy giặt trên tầng 4 Không <br>
+                            phải kinh doanh phòng nên điện nước tính theo giá nhà <br>
+                            nước hoặc chia đầu người.</p>
+                    </div>
+                    <div class="imgdemo">
+                        <img src="/assets/img/imgdemo.png" alt="">
+                        <div class="icon">
+                            <img src="/assets/icon/chuyen.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </div>
     <script>
-        var fb=document.getElementById('fb');
         var infoUser=document.getElementById('infoUser');
-        var admin0=document.getElementById('admin0');  
-        admin0.onclick= function() {
+        var admin0=document.getElementById('admin0');
+        admin0.onclick=function() {
             if(infoUser.style.display==='none'){
                 infoUser.style.display='block';
             }else{
                 infoUser.style.display='none';
             }
-        }
+        } 
+
         /*browse*/
         var imgdeletesucc=document.getElementById('imgdeletesucc');
+        var imgsucc=document.getElementById('imgsucc');    
         var tick=document.querySelectorAll('#content .browse_articles .tick');
-        tick.forEach(function(element) {
+        var row=document.querySelectorAll('#content .browse_articles .row');
+        var numberstr=document.querySelectorAll('#content .browse_articles .number')
+        var bin=document.querySelectorAll('#content .browse_articles .bin');
+
+        tick.forEach(function(element, index) {
             element.onclick=function() {
-                imgdeletesucc.style.display='block';
+                imgsucc.style.display='block';
                 setTimeout(function() {
-                    imgdeletesucc.style.display='none';
+                    imgsucc.style.display='none';
+                    row[index].style.display = 'none';
+
+                    for (var i = index + 1; i < numberstr.length; i++) {
+                        var numberint = parseInt(numberstr[i].textContent);
+                        numberint--;
+                        numberstr[i].textContent = numberint;
+                    }                
                 },2000);
             }
         })
+
+        bin.forEach(function(e, index) {
+            e.onclick=function() {
+                imgdeletesucc.style.display='block';
+                setTimeout(function() {
+                    imgdeletesucc.style.display='none';
+                    row[index].style.display = 'none';
+
+                    for (var i = index + 1; i < numberstr.length; i++) {
+                        var numberint = parseInt(numberstr[i].textContent);
+                        numberint--;
+                        numberstr[i].textContent = numberint;
+                    }     
+                },2000)
+            }    
+        })
+
+        /*chuyển*/
+        var describe=document.getElementById('describe');
+        var link=document.getElementById('link');
+        var container=document.getElementById('container');
+        link.onclick=function() {
+            container.style.display='none';
+            describe.style.display='block';
+        }
     </script>
 </body>
 </html>

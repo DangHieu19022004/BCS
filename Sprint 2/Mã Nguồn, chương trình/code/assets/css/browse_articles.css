@@ -59,8 +59,10 @@
 }
 
 #header .list .propertises_user ul{
-    position: absolute;
+    position: relative;
     display: none;
+    margin-top: 10px;
+    right: 30px;
 }
 
 #header .list .propertises_user li{
@@ -177,6 +179,20 @@ table{
     color: red;
     font-size: 20px;
 }
+
+/* browse and delete */
+#imgdeletesucc,
+#imgsucc{
+    position: absolute;
+    width: 500px;
+    height: 300px;
+    object-fit: cover;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: none;
+}
+
 
 /* Next Page */
 

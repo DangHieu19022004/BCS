@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Basic College Students</title>
     <link rel="shortcut icon" href="/assets/logoweb/android-chrome-512x512.png" type="image/x-icon">
-    <link rel="stylesheet" href="/assets/css/css_homepage.css">
+    <link rel="stylesheet" href="/assets/css/adminpage.css">
     <link rel="stylesheet" href="./assets/font/themify-icons/themify-icons.css">
     <link rel="stylesheet" href="/assets/font/fontawesome-free-6.4.2-web/fontawesome-free-6.4.2-web/css/all.css">
 </head>
@@ -18,35 +18,15 @@
                 </li>
 
                 <li>
-                    <a href="" class="trangchu">Trang chủ</a>
+                    <a href="/htmlchild/adminpage.html" class="trangchu">Trang chủ</a>
                 </li>
 
                 <li class="propertises">
                     <a href="/htmlchild/browse_articles.html">Duyệt bài</a>
                 </li>
 
-                <li class="propertises">
-                    <a href="">Người cho thuê</a>
-                </li>
-
-                <li class="propertises">
-                    <a id="RentHouse" href="/htmlchild/filter.html">Thuê trọ</a>
-                </li>
-
-                <li class="propertises">
-                    <a href="">Tìm người ghép cùng</a>
-                </li>
-
-                <li class="propertises">
-                    <a href="">Gửi liên hệ</a>
-                </li>
-
-                <li class="propertises">
-                    <a href="">Đăng bài</a>
-                </li>
-
-                <li class="propertises_user">
-                    <img id="admin0" src="/assets/icon/admin.png" alt="">
+                <li id="propertises_user" class="propertises_user">
+                    <img id="adminn" src="/assets/icon/admin.png" alt="">
                     <ul id="infoUser">
                         <li>
                             <a href="">Sửa thông tin</a>
@@ -319,21 +299,16 @@
 <script>
     var fb=document.getElementById('fb');
     var infoUser=document.getElementById('infoUser');
-    var userO=document.getElementById('userO');
-    var RentHouse=document.getElementById('RentHouse');
-    RentHouse.onclick=function() {
-        window.location.href='/htmlchild/filter.html';
-    }
-
-    fb.onclick=(function() {
-        window.location.href='https://www.facebook.com/profile.php?id=100079643042931';
-    })
-    userO.onclick= function() {
+    var admin0=document.getElementById('adminn');  
+    admin0.onclick= function() {
         if(infoUser.style.display==='none'){
             infoUser.style.display='block';
         }else{
             infoUser.style.display='none';
         }
+    }
+    fb.onclick=function() {
+        window.location.href='https://www.facebook.com/profile.php?id=100079643042931';
     }
 </script>
 

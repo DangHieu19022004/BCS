@@ -44,7 +44,7 @@
 }
 
 #header .list .propertises_user{
-    margin-left: 150px;
+    margin-left: 800px;
 }
 
 #header .list .propertises_user:hover{
@@ -52,6 +52,7 @@
 }
 
 #header .list .propertises_user ul{
+    margin-top: 75px;
     position: absolute;
     display: none;
 }
@@ -70,6 +71,13 @@
     display: block;
 }
 
+#header .list .propertises_user img{
+    position: relative;
+    float: right;
+    max-height: 68px;
+    max-width: 100px;
+    object-fit: cover;
+}
 
 #line1{
     border-top: 0.3px solid #fff;

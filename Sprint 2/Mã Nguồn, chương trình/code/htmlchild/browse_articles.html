@@ -18,7 +18,7 @@
                 </li>
 
                 <li>
-                    <a id="homepage" href="/htmlchild/homepage.html" class="trangchu">Trang chủ</a>
+                    <a id="homepage" href="/htmlchild/adminpage.html" class="trangchu">Trang chủ</a>
                 </li>
 
                 <li class="propertises">
@@ -59,7 +59,7 @@
                             <td>0326057878</td>
                             <td>https://www.BasicCollegeStudents.com/Phunghung</td>
                             <td>
-                                <button class="browse_articles_select">
+                                <button class="tick browse_articles_select">
                                     <i class="browse_articles_tick fa-solid fa-check"></i>
                                 </button>
                                 <button class="browse_articles_delete">
@@ -74,7 +74,7 @@
                             <td>0325123457</td>
                             <td>https://www.BasicCollegeStudents.com/ThanhTri</td>
                             <td>
-                                <button class="browse_articles_select">
+                                <button class="tick browse_articles_select">
                                     <i class="browse_articles_tick fa-solid fa-check"></i>
                                 </button>
                                 <button class="browse_articles_delete">
@@ -89,7 +89,7 @@
                             <td>0321234457</td>
                             <td>https://www.BasicCollegeStudents.com/TranDuyHung</td>
                             <td>
-                                <button class="browse_articles_select">
+                                <button class="tick browse_articles_select">
                                     <i class="browse_articles_tick fa-solid fa-check"></i>
                                 </button>
                                 <button class="browse_articles_delete">
@@ -104,7 +104,7 @@
                             <td>0325123457</td>
                             <td>https://www.BasicCollegeStudents.com/LongBien</td>
                             <td>
-                                <button class="browse_articles_select">
+                                <button class="tick browse_articles_select">
                                     <i class="browse_articles_tick fa-solid fa-check"></i>
                                 </button>
                                 <button class="browse_articles_delete">
@@ -116,8 +116,38 @@
                 </div>
             </div>
 
+            <div id="imgsucc">
+                <img src="/assets/img/browsesuccess.png" alt="">
+            </div>
+            <div id="imgdeletesucc">
+                <img src="/assets/img/browsedeltesucc.png" alt="">
+            </div>
+
             <button class="next-page">1/10</button>
         </div>
     </div>
+    <script>
+        var fb=document.getElementById('fb');
+        var infoUser=document.getElementById('infoUser');
+        var admin0=document.getElementById('admin0');  
+        admin0.onclick= function() {
+            if(infoUser.style.display==='none'){
+                infoUser.style.display='block';
+            }else{
+                infoUser.style.display='none';
+            }
+        }
+        /*browse*/
+        var imgdeletesucc=document.getElementById('imgdeletesucc');
+        var tick=document.querySelectorAll('#content .browse_articles .tick');
+        tick.forEach(function(element) {
+            element.onclick=function() {
+                imgdeletesucc.style.display='block';
+                setTimeout(function() {
+                    imgdeletesucc.style.display='none';
+                },2000);
+            }
+        })
+    </script>
 </body>
 </html>

@@ -106,7 +106,12 @@
         }
     }
     signbutton.onclick=function(){
-        if(signin_text.value==='meomeouser' && pass_text.value==='meomeopass'){
+        if(signin_text.value==='useradmin' && pass_text.value==='userpass'){
+            loginsuccess.style.display='block';
+            setTimeout(function() {
+                window.location.href='/htmlchild/adminpage.html';
+            },2000)
+        } else if(signin_text.value==='meomeouser' && pass_text.value==='meomeopass'){
             loginsuccess.style.display='block';
             setTimeout(function() {
                 window.location.href='./homepage.html';

@@ -53,6 +53,7 @@
 
 #header .list .propertises_user ul{
     margin-top: 75px;
+    z-index: 1;
     position: absolute;
     display: none;
 }

@@ -52,6 +52,9 @@
                             <a href="">Sửa thông tin</a>
                         </li>
                         <li>
+                            <a href="">Tin nhắn</a>
+                        </li>
+                        <li>
                             <a href="/BasicCollegeStudents.html">Đăng xuất</a>
                         </li>
                     </ul>
@@ -158,24 +161,24 @@
                 <div class="homeimg">
                     <ul id="homeimg_top" class="homeimg_top">
                         <li>
-                            <img id="PhungHung" src="/assets/img/PhungHung.png" alt="">
+                            <img id="PhungHung" src="/assets/img/PhungHung-vote.png" alt="">
                         </li>
                         <li>
-                            <img src="/assets/img/GiaThuy.png" alt="">
+                            <img src="/assets/img/GiaThuy-vote.png" alt="">
                         </li>
                         <li>
-                            <img src="/assets/img/KimGiang.png" alt="">
+                            <img src="/assets/img/KimGiang-vote.png" alt="">
                         </li>
                     </ul>
                     <ul id="homeimg_bot" class="homeimg_bot">
                         <li>
-                            <img src="/assets/img/NguyenKhang.png" alt="">
+                            <img src="/assets/img/NguyenKhang-vote.png" alt="">
                         </li>
                         <li>
-                            <img src="/assets/img/LeThanhNghi.png" alt="">
+                            <img src="/assets/img/LeThanhNghi-vote.png" alt="">
                         </li>
                         <li>
-                            <img src="/assets/img/GiaiPhong.png" alt="">
+                            <img src="/assets/img/GiaiPhong-vote.png" alt="">
                         </li>
                     </ul>
                 </div>    
@@ -280,7 +283,15 @@
             
            })
         }
-        
+        var userO=document.getElementById('userO');
+        var infoUser=document.getElementById('infoUser');
+        userO.onclick=function() {
+            if(infoUser.style.display==='none'){
+                infoUser.style.display='block';
+            }else{
+                infoUser.style.display='none';
+            }
+        }
         homepage.onclick=function() {
             window.location.href='./homepage.html';
         };

@@ -54,6 +54,8 @@
 #header .list .propertises_user ul{
     position: absolute;
     display: none;
+    z-index: 1 ;
+
 }
 
 #header .list .propertises_user li{
@@ -66,10 +68,9 @@
 }
 
 #header .list .propertises_user li:hover a{
-    background-color: #94d3f7;
-    display: block;
+    background-color: #94d3f7 !important;
+    display: block !important;
 }
-
 
 #line1{
     border-top: 0.3px solid #fff;

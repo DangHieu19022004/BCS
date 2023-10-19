@@ -60,7 +60,9 @@
 }
 
 #header .list .propertises_user ul{
+    padding-top: 10px;
     position: absolute;
+    z-index: 1;
     display: none;
 }
 
